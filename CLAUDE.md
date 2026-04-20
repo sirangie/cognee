@@ -94,11 +94,8 @@ ruff format .
 # Run both linting and formatting (pre-commit)
 pre-commit run --all-files
 
-# Type checking with mypy
-mypy cognee/
-
-# Run pylint
-pylint cognee/
+# Type checking with ty
+ty check .
 ```
 
 ### Running Cognee
