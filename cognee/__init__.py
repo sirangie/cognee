@@ -1,8 +1,11 @@
-"""
-cognee - A knowledge graph and memory layer for LLM applications.
+"""cognee - A knowledge graph and memory layer for LLM applications.
 
 This package provides tools for building, querying, and managing
 knowledge graphs powered by large language models.
+
+Personal fork notes:
+- Using this for experimenting with local LLM integrations
+- See examples/ folder for my custom usage scripts
 """
 
 from cognee.api.v1.cognify import cognify
