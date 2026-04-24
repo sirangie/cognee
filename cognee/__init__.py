@@ -8,6 +8,7 @@ Personal fork notes:
 - See examples/ folder for my custom usage scripts
 - Added `delete` to public API since I use it frequently
 - Added `get_graph` to public API for easier graph inspection
+- Added `visualize` to public API for quick graph visualization in notebooks
 """
 
 from cognee.api.v1.cognify import cognify
@@ -16,6 +17,7 @@ from cognee.api.v1.search import search
 from cognee.api.v1.prune import prune
 from cognee.api.v1.delete import delete
 from cognee.api.v1.get import get_graph
+from cognee.api.v1.visualize import visualize  # useful for quick sanity checks
 from cognee.config import Config
 
 __version__ = "0.1.0"
@@ -29,6 +31,7 @@ __all__ = [
     "prune",
     "delete",
     "get_graph",  # handy for debugging graph state in notebooks
+    "visualize",  # added this - makes it way easier to inspect graphs visually
     "Config",
     "__version__",
 ]
