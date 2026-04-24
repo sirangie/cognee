@@ -9,6 +9,7 @@ Personal fork notes:
 - Added `delete` to public API since I use it frequently
 - Added `get_graph` to public API for easier graph inspection
 - Added `visualize` to public API for quick graph visualization in notebooks
+- Added `config` convenience instance so I don't have to instantiate Config manually
 """
 
 from cognee.api.v1.cognify import cognify
@@ -23,6 +24,9 @@ from cognee.config import Config
 __version__ = "0.1.0"
 __author__ = "cognee contributors"
 
+# Shared config instance - saves typing Config() every time in notebooks/scripts
+config = Config()
+
 # Public API surface
 __all__ = [
     "cognify",
@@ -33,5 +37,6 @@ __all__ = [
     "get_graph",  # handy for debugging graph state in notebooks
     "visualize",  # added this - makes it way easier to inspect graphs visually
     "Config",
+    "config",  # pre-instantiated for convenience
     "__version__",
 ]
