@@ -6,12 +6,14 @@ knowledge graphs powered by large language models.
 Personal fork notes:
 - Using this for experimenting with local LLM integrations
 - See examples/ folder for my custom usage scripts
+- Added `delete` to public API since I use it frequently
 """
 
 from cognee.api.v1.cognify import cognify
 from cognee.api.v1.add import add
 from cognee.api.v1.search import search
 from cognee.api.v1.prune import prune
+from cognee.api.v1.delete import delete
 from cognee.config import Config
 
 __version__ = "0.1.0"
@@ -23,6 +25,7 @@ __all__ = [
     "add",
     "search",
     "prune",
+    "delete",
     "Config",
     "__version__",
 ]
