@@ -7,6 +7,7 @@ Personal fork notes:
 - Using this for experimenting with local LLM integrations
 - See examples/ folder for my custom usage scripts
 - Added `delete` to public API since I use it frequently
+- Added `get_graph` to public API for easier graph inspection
 """
 
 from cognee.api.v1.cognify import cognify
@@ -14,6 +15,7 @@ from cognee.api.v1.add import add
 from cognee.api.v1.search import search
 from cognee.api.v1.prune import prune
 from cognee.api.v1.delete import delete
+from cognee.api.v1.get import get_graph
 from cognee.config import Config
 
 __version__ = "0.1.0"
@@ -26,6 +28,7 @@ __all__ = [
     "search",
     "prune",
     "delete",
+    "get_graph",  # handy for debugging graph state in notebooks
     "Config",
     "__version__",
 ]
